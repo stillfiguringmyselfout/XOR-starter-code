@@ -12,6 +12,26 @@ def XORonByte(byte, key):
 
 print(XORonByte("0010", "0011")
 
+def XORonLetter(letter, keyLetter)
+
+    letterBin = encode(letter)
+    keyLetterBin = encode(keyLetter)
+
+    encryptedLetter = XORonByte(letterBin, keyLetterBin)
+
+    return decode(encryptedLetter)
+
+print(XORonLetter("d", "r"))
+
+def XORonSentence(sentence, key):
+    encryptedSentence = ""
+    for i in range(len(sentence)):
+        encryptedSentence += XORonLetter(sentence[i], key[i])
+    return encryptedSentence
+
+print(XORonSentence("hello", "world"))
+print(XORonSentence("rkAan", "world"))
+
 characters = [
     # lowercase characters
 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',
