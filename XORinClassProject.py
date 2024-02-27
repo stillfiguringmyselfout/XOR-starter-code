@@ -1,3 +1,17 @@
+def XOR(bit1, bit2):
+    if bit1 == bit2:
+        return '0'
+    else:
+        return '1'
+
+def XORonByte(byte, key):
+    emsg = ""
+    for i in range(len(byte)):
+        emsg += XOR(byte[i], key[i])
+    return emsg
+
+print(XORonByte("0010", "0011")
+
 characters = [
     # lowercase characters
 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',
